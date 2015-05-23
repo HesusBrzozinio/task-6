@@ -1,0 +1,13 @@
+oznacz klasê Book adnotacjami @XmlAccessorType oraz @XmlType podaj¹c stosowne parametry
+
+oznacz poszczególne pola klasy Book adnotacjami @XmlElement
+
+utwórz bezstanowy bean sesyjny z dodatkow¹ adnotacj¹ przeznaczon¹ dla webserwisów
+
+utwórz metody dla dodawania ksi¹¿ki oraz dla zwracania listy ksi¹¿ek a nastêpnie oznacz je stosownymi adnotacjami
+
+wstrzyknij serwis umo¿liwiaj¹cy pobranie ksi¹¿ek uzywaj¹c stosownej adnotacji
+
+zaimplementuj metody interfesu
+
+u¿yj aplikacji SOUP-UI w celu weryfikacji dzia³ania webserwisu
