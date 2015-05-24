@@ -20,9 +20,7 @@ import org.slf4j.LoggerFactory;
 
 import service.jms.MessageSenderBean;
 
-@ManagedBean(name = "shoppingCart")
-@SessionScoped
-public class ShoppingCartController implements Serializable {
+public class ShoppingCartController  {
 
 	private static final long serialVersionUID = 1L;
 	private static final Logger LOG = LoggerFactory
@@ -33,14 +31,6 @@ public class ShoppingCartController implements Serializable {
 
 	private int cartItemQuantity;
 
-
-	public void addBook(final Book book, final int quantity) {
-		updateCart(book, quantity);
-		calculatePriceAndQuantity();
-		setEntries(new ArrayList<Entry<Book, Quantity>>(books.entrySet()));
-		LOG.info("shopping cart updated");
-
-	}
 
 	private void updateCart(final Book book, final int quantity) {
 		if (books.containsKey(book)) {

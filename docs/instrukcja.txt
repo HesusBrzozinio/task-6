@@ -1,13 +1,11 @@
-oznacz klasê Book adnotacjami @XmlAccessorType oraz @XmlType podaj¹c stosowne parametry
+W kontrolerze ShoppingCartController utwórz metodê która umo¿liwi dodawanie ksi¹¿ek do koszyka. Wywo³anie metody nie powinno powodowaæ prze³adowania siê strony ani przekierowywaæ na inn¹ stronê. W ramach metody powinny zostaæ zaktualizowane koszyk, ca³kowita cena koszyka oraz ca³kowita iloœæ pozycji w koszyku (wykorzystaj istniej¹ce metody kontrolera).
 
-oznacz poszczególne pola klasy Book adnotacjami @XmlElement
+Na stronie z ksi¹¿kami (index.xhtml) utwórz przycisk umo¿liwiaj¹cy dodanie ksi¹zki do koszyka. Przycisk powinien byæ widoczny przey kazdej ksi¹¿ce. W tym celu u¿yj komponentu <f:facet> z zagnie¿dzonym komponentem commandLink który wywo³a utworzon¹ wczeœniej metodê kontrolera ShoppingCartController. Nale¿y przekazaæ aktualn¹ ksi¹¿kê jako parametr metody.
 
-utwórz bezstanowy bean sesyjny z dodatkow¹ adnotacj¹ przeznaczon¹ dla webserwisów
 
-utwórz metody dla dodawania ksi¹¿ki oraz dla zwracania listy ksi¹¿ek a nastêpnie oznacz je stosownymi adnotacjami
+Na stronie navigation.xhtml dodaj przycisk typu commandLink z bespoœredni¹ nawigacj¹ do strony shopping_cart.xhtml.
+Przycisk powinien wyœwietlaæ aktualn¹ liczbê elementów w koszyku. W tym celu w komponencie commandLink nale¿y zagnieŸdziæ komponent outputText posiadaj¹cy unikalny identyfikator oraz liczbê ksi¹¿ek w koszyku pobieran¹ z kontrolera obs³uguj¹cego koszyk ustawion¹ jako wartoœæ tego pola.
 
-wstrzyknij serwis umo¿liwiaj¹cy pobranie ksi¹¿ek uzywaj¹c stosownej adnotacji
+W celu wyœwietlania zawartoœci koszyka do strony shopping_cart.xhtml dodaj komponent dataList.
 
-zaimplementuj metody interfesu
 
-u¿yj aplikacji SOUP-UI w celu weryfikacji dzia³ania webserwisu
